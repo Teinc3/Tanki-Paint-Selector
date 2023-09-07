@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProTanki Paint Selector</title>
+    <style>
+        /* Add some basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ProTanki Paint Selector</h1>
+        <p>Enter turret choice for all enemies:</p>
+        <form id="paintSelector">
+
+            <!-- Include M2 Paints -->
+            <label for="includeM2">Include M2 Paints:</label>
+            <input type="checkbox" id="includeM2" name="includeM2" checked><br><br>
+
+            <!-- Firebird Count -->
+            <label for="firebirdCount">Firebird:</label>
+            <input type="number" id="firebirdCount" name="firebirdCount" value="0" min="0"><br><br>
+
+            <!-- Freeze Count -->
+            <label for="freezeCount">Freeze:</label>
+            <input type="number" id="freezeCount" name="freezeCount" value="0" min="0"><br><br>
+
+            <!-- Isida Count -->
+            <label for="isidaCount">Isida:</label>
+            <input type="number" id="isidaCount" name="isidaCount" value="0" min="0"><br><br>
+
+            <!-- Hammer Count -->
+            <label for="hammerCount">Hammer:</label>
+            <input type="number" id="hammerCount" name="hammerCount" value="0" min="0"><br><br>
+
+            <!-- Twins Count -->
+            <label for="twinsCount">Twins:</label>
+            <input type="number" id="twinsCount" name="twinsCount" value="0" min="0"><br><br>
+
+            <!-- Ricochet Count -->
+            <label for="ricochetCount">Ricochet:</label>
+            <input type="number" id="ricochetCount" name="ricochetCount" value="0" min="0"><br><br>
+
+            <!-- Smoky Count -->
+            <label for="smokyCount">Smoky:</label>
+            <input type="number" id="smokyCount" name="smokyCount" value="0" min="0"><br><br>
+
+            <!-- Thunder Count -->
+            <label for="thunderCount">Thunder:</label>
+            <input type="number" id="thunderCount" name="thunderCount" value="0" min="0"><br><br>
+
+            <!-- Vulcan Count -->
+            <label for="vulcanCount">Vulcan:</label>
+            <input type="number" id="vulcanCount" name="vulcanCount" value="0" min="0"><br><br>
+
+            <!-- Railgun Count -->
+            <label for="railgunCount">Railgun:</label>
+            <input type="number" id="railgunCount" name="railgunCount" value="0" min="0"><br><br>
+
+            <!-- Shaft Count -->
+            <label for="shaftCount">Shaft:</label>
+            <input type="number" id="shaftCount" name="shaftCount" value="0" min="0"><br><br>
+
+            <button type="button" onclick="calculate()">Get Best Paints</button>
+            <button type="button" onclick="reset()">Reset Turrets</button>
+        </form>
+
+        <br>
+        <hr style="color: #333; background-color: #333; height: 2px; border: none;">
+        <br>
+
+        <div id="paintResults">
+            <!-- Paint results will be displayed here -->
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="./paints.js"></script>
+</body>
+</html>
