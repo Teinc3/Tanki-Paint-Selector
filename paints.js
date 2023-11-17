@@ -263,7 +263,7 @@ var specialPaints = [
         shaft: 15
     }/*,
     {
-        name: "Frost",
+        name: "Helper",
         firebird: 20,
         freeze: 20,
         isida: 20,
@@ -277,3 +277,11 @@ var specialPaints = [
         shaft: 20
     }*/
 ]
+
+if (module) {
+    module.exports = {
+        m3Paints,
+        m2Paints,
+        specialPaints
+    }
+}
