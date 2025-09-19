@@ -52,6 +52,13 @@ var m3Paints = [
         ricochet: 23
     },
     {
+        name: "Mirage",
+        firebird: 35,
+        smoky: 22,
+        thunder: 20,
+        vulcan: 23
+    },
+    {
         name: "Emerald",
         thunder: 50,
         twins: 35,
